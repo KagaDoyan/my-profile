@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NetworkMeshLayout from "./components/networkmesh";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +26,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-950`}
       >
-        {children}
+        <NetworkMeshLayout
+          dotColor="rgba(255, 99, 71, 0.8)"
+          lineColor="rgba(255, 99, 71, 0.5)"
+          speed={0.1}
+          children={children}
+          dotCount={170}
+        />
       </body>
     </html>
+
   );
 }
