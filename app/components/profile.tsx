@@ -164,7 +164,7 @@ export default function Profile() {
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src={`${config.basePath}/image/static/Postgresql.png`}
+                                        src={`${config.basePath}/image/static/postgresql.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
