@@ -1,8 +1,7 @@
 'use client';
 
 import { useRef } from "react";
-import { QRCodeSVG } from 'qrcode.react';
-
+const config = require('../../next.config')
 export default function Profile() {
     const work_year = new Date().getFullYear() - 2021;
     // make a ref to the element
@@ -56,7 +55,7 @@ export default function Profile() {
                         </div>
                     </div>
                     <div className="mt-20 lg:w-1/3 flex flex-col justify-center items-center">
-                        <img src="/image/static/qr.png" alt="qr code" />
+                        <img src={`${config.basePath}/image/static/qr.png`} alt="qr code" />
                         <button
                             className="mt-4 text-lg font-semibold bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition-colors duration-300"
                             onClick={() => {
@@ -102,84 +101,84 @@ export default function Profile() {
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 border border-gray-300 p-8 rounded-md">
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/golang.png"
+                                        src={`${config.basePath}/image/static/golang.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/type.png"
+                                        src={`${config.basePath}/image/static/type.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/c_sh.png"
+                                        src={`${config.basePath}/image/static/c_sh.png`}
                                         alt="Logo"
                                         className="w-20 h-20 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/fiber.png"
+                                        src={`${config.basePath}/image/static/fiber.png`}
                                         alt="Logo"
                                         className="w-18 h-18 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/elysia_v.webp"
+                                        src={`${config.basePath}/image/static/elysia_v.webp`}
                                         alt="Logo"
                                         className="w-18 h-18 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/react.png"
+                                        src={`${config.basePath}/image/static/react.png`}
                                         alt="Logo"
                                         className="w-18 h-18 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/svelte.png"
+                                        src={`${config.basePath}/image/static/svelte.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/docker.webp"
+                                        src={`${config.basePath}/image/static/docker.webp`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/jenkin.png"
+                                        src={`${config.basePath}/image/static/jenkin.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/postgresql.png"
+                                        src={`${config.basePath}/image/static/postgresql.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/mysql.webp"
+                                        src={`${config.basePath}/image/static/mysql.webp`}
                                         alt="Logo"
                                         className="w-18 h-18 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="flex justify-center items-center p-2 rounded-lg h-24 hover:transform hover:translate-y-[-5px] transition-transform duration-300">
                                     <img
-                                        src="/image/static/mgdb.png"
+                                        src={`${config.basePath}/image/static/mgdb.png`}
                                         alt="Logo"
                                         className="w-14 h-14 object-contain hover:transform hover:scale-110 transition-transform duration-300"
                                     />
@@ -229,25 +228,25 @@ export default function Profile() {
 
                 <div className="w-full max-w-6xl p-8 mt-20 min-h-screen flex flex-col items-center justify-center" ref={Experience}>
                     <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="space-y-6 p-8">
+                        <div className="space-y-6 p-8">
                             <h1 className="text-4xl font-bold border-b border-gray-300 pb-2">Experience</h1>
                             <div className="space-y-4">
                                 <div className="flex items-center space-x-4">
-                                    <img src="/image/static/LTC.png" alt="Lao Telecom" className="w-16 h-16 object-contain bg-white rounded-full" />
+                                    <img src={`${config.basePath}/image/static/LTC.png`} alt="Lao Telecom" className="w-16 h-16 object-contain bg-white rounded-full" />
                                     <div>
                                         <h2 className="text-lg font-semibold">Lao Telecom</h2>
                                         <p className="text-md text-gray-400">Backend Developer (2021-2022)</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-4">
-                                    <img src="/image/static/kokkok.jpg" alt="Kokkok Company" className="w-16 h-16 object-contain round rounded-full" />
+                                    <img src={`${config.basePath}/image/static/kokkok.jpg`} alt="Kokkok Company" className="w-16 h-16 object-contain round rounded-full" />
                                     <div>
                                         <h2 className="text-lg font-semibold">Kokkok Company (Kolao)</h2>
                                         <p className="text-md text-gray-400">Backend Developer (2022-2023)</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-4">
-                                    <img src="/image/static/kolao.png" alt="Kolao HQ" className="w-16 h-16 object-contain rounded-full" />
+                                    <img src={`${config.basePath}/image/static/kolao.png`} alt="Kolao HQ" className="w-16 h-16 object-contain rounded-full" />
                                     <div>
                                         <h2 className="text-lg font-semibold">Kolao HQ</h2>
                                         <p className="text-md text-gray-400">Backend Developer (2023-Present)</p>
@@ -272,7 +271,7 @@ export default function Profile() {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div className="w-full max-w-6xl p-8 mt-20 min-h-screen flex flex-col items-center justify-center" ref={Languages}>
