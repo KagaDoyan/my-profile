@@ -188,18 +188,9 @@ export default function Profile() {
                         </div>
                         <div className="mt-8 col-span-2">
                             <div className="space-y-6 p-8">
-                                <h2 className="text-4xl font-bold border-b border-gray-300 pb-2">Skill Levels</h2>
                                 <div className="space-y-4">
                                     <div>
                                         <h2 className="text-xl font-semibold">Backend Development:</h2>
-                                        <div className="relative pt-1">
-                                            <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-orange-200">
-                                                <div style={{ width: '90%' }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h2 className="text-xl font-semibold">Logic:</h2>
                                         <div className="relative pt-1">
                                             <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-orange-200">
                                                 <div style={{ width: '90%' }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"></div>
